@@ -11,7 +11,7 @@ import SwiftUI
 struct iOSConchaApp: App {
     var body: some Scene {
         WindowGroup {
-            CustomSlider()
+            MainView()
         }
     }
 }

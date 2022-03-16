@@ -9,64 +9,48 @@ import SwiftUI
 
 struct MainView: View {
 	@State private var selectedValue: Double = 50.0
+	@State private var activeStatus: Bool = false
 	
     var body: some View {
 		ZStack {
 			Color("backgroundColor")
 				.edgesIgnoringSafeArea(.all)
+			
 			VStack {
 				Text("Please take this test")
 					.font(.custom("Georgia", size: 24, relativeTo: .headline))
 					.padding(.bottom, 25)
-					.padding(.top, 150)
+					.padding(.top, 80)
 				
 				Text("Current value: \(selectedValue)")
 					.padding(.bottom, 30)
 				
 				HStack {
 					CustomSlider()
-						.padding(.trailing, 80)
-						.padding(.leading, 100)
+						.padding(.trailing, 60)
 					VStack {
 						Button(action: {
 							
 						}, label: {
-							Circle()
-								.frame(width: 35, height: 35, alignment: .center)
-								.foregroundColor(Color("circleButtonColor"))
-								.overlay(Text(Image(systemName: "chevron.up"))
-									.bold()
-									.foregroundColor(.yellow))
-								
+							ValueOperatorButton(direction: .up, size: 40)
 						})
 						.padding(.bottom, 35)
 						
 						Button(action: {
 							
 						}, label: {
-							Circle()
-								.frame(width: 35, height: 35, alignment: .center)
-								.foregroundColor(Color("circleButtonColor"))
-								.overlay(Text(Image(systemName: "chevron.down"))
-									.bold()
-									.foregroundColor(.yellow))
+							ValueOperatorButton(direction: .down, size: 40)
 						})
 					}
 				}
 				.padding(.bottom, 20)
+				.padding(.leading, 100)
 				
 				Button(action: {
 					
 				}, label: {
-					Text("Next")
-						.bold()
-						
+					NextButton(active: activeStatus)
 				})
-				.frame(width: 300, height: 15, alignment: .center)
-				.padding()
-				.background(Color("activeButtonColor"))
-				.foregroundColor(Color.black)
-				.cornerRadius(30)
 			}
 		}
     }
