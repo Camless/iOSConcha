@@ -12,6 +12,7 @@ struct NextButton: View {
     var body: some View {
 		if active == true {
 			Text("NEXT")
+				.font(.caption)
 				.bold()
 				.frame(width: 300, height: 15, alignment: .center)
 				.padding()
@@ -20,6 +21,7 @@ struct NextButton: View {
 				.cornerRadius(30)
 		} else {
 			Text("NEXT")
+				.font(.caption)
 				.bold()
 				.frame(width: 300, height: 15, alignment: .center)
 				.padding()
