@@ -20,7 +20,6 @@
 		07D9E2E627E25A57005FD5EF /* UserEntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9E2E527E25A57005FD5EF /* UserEntryModel.swift */; };
 		07D9E2E927E27B06005FD5EF /* CustomSliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9E2E827E27B06005FD5EF /* CustomSliderViewModel.swift */; };
 		07D9E2ED27E28DED005FD5EF /* EntryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9E2EC27E28DED005FD5EF /* EntryRow.swift */; };
-		07D9E2F027E2BAC2005FD5EF /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9E2EF27E2BAC2005FD5EF /* CGFloatExtension.swift */; };
 		07D9E2F427E2C1CB005FD5EF /* TickLineCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9E2F327E2C1CB005FD5EF /* TickLineCapsule.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		07D9E2E527E25A57005FD5EF /* UserEntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryModel.swift; sourceTree = "<group>"; };
 		07D9E2E827E27B06005FD5EF /* CustomSliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderViewModel.swift; sourceTree = "<group>"; };
 		07D9E2EC27E28DED005FD5EF /* EntryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRow.swift; sourceTree = "<group>"; };
-		07D9E2EF27E2BAC2005FD5EF /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		07D9E2F327E2C1CB005FD5EF /* TickLineCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickLineCapsule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +108,6 @@
 		07253AE227DFD1BB00B60097 /* iOSConcha */ = {
 			isa = PBXGroup;
 			children = (
-				07D9E2EE27E2BAB5005FD5EF /* Support */,
 				07D9E2CF27E02A9B005FD5EF /* Models */,
 				07D9E2E727E273CD005FD5EF /* ViewModels */,
 				07D9E2CE27E02A94005FD5EF /* Views */,
@@ -167,14 +164,6 @@
 				07D9E2E827E27B06005FD5EF /* CustomSliderViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		07D9E2EE27E2BAB5005FD5EF /* Support */ = {
-			isa = PBXGroup;
-			children = (
-				07D9E2EF27E2BAC2005FD5EF /* CGFloatExtension.swift */,
-			);
-			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +306,6 @@
 				07D9E2ED27E28DED005FD5EF /* EntryRow.swift in Sources */,
 				07D9E2E927E27B06005FD5EF /* CustomSliderViewModel.swift in Sources */,
 				07D9E2E627E25A57005FD5EF /* UserEntryModel.swift in Sources */,
-				07D9E2F027E2BAC2005FD5EF /* CGFloatExtension.swift in Sources */,
 				07D9E2F427E2C1CB005FD5EF /* TickLineCapsule.swift in Sources */,
 				07253AE427DFD1BB00B60097 /* iOSConchaApp.swift in Sources */,
 			);

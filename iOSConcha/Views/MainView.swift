@@ -51,8 +51,10 @@ struct MainView: View {
 				
 				Button(action: {
 					Task {
-						if await viewModel.submitNextButton() {
-							presentingResults.toggle()
+						if viewModel.currentTick >= 0 {
+							if await viewModel.submitNextButton() {
+								presentingResults.toggle()
+							}
 						}
 					}
 				}, label: {
